@@ -23,6 +23,8 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet">
+
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -43,7 +45,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/logo.png" alt="">
         <h1 class="sitename">LOTUS</h1>
       </a>
 
@@ -59,7 +61,7 @@
       <div class="header-social-links">
         <a href="https://github.com/TAG-Research/lotus" class="github"><i class="bi bi-github"></i></a>
         <a href="https://arxiv.org/abs/2407.11418" class="arxiv"><i class="bi bi-file-earmark-text"></i></a>
-        <a href="#" class="slack"><i class="bi bi-slack"></i></a>
+        <a href="https://join.slack.com/t/lotus-fnm8919/shared_invite/zt-2tnq6948j-juGuSIR0__fsh~kUmZ6TJw" class="slack"><i class="bi bi-slack"></i></a>
       </div>
 
     </div>
@@ -72,10 +74,15 @@
 
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-            <h2>Welcome to LOTUS</h2>
+          <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="100">
+            <h2>LOTUS: Easily Run LLMs over Tables</h2>
             <p>A Query Engine For Processing Structured and Unstructured Data with LLMs</p>
-            <a href="#about" class="btn-get-started">Get Started</a>
+            <div class="d-flex justify-content-center gap-4">
+              <a href="https://lotus-ai.readthedocs.io/en/latest/" class="btn-get-started">Docs</a>
+              <a href="https://github.com/TAG-Research/lotus" class="btn-get-started">GitHub</a>
+              <a href="https://join.slack.com/t/lotus-fnm8919/shared_invite/zt-2tnq6948j-juGuSIR0__fsh~kUmZ6TJw" class="btn-get-started">Slack</a>
+              <a href="https://arxiv.org/abs/2407.11418" class="btn-get-started">Paper</a>
+            </div>
           </div>
         </div>
       </div>
@@ -139,6 +146,47 @@
       </div>
 
     </section><!-- /About Section -->
+
+    <!-- Code Example Section -->
+    <section id="code-example" class="code-example section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Code Example</h2>
+        <p>See how easy it is to use LOTUS with this simple example.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="content">
+              <h3>Quickly Build Semantic Pipelines</h3>
+              <p>
+                This example shows how LOTUS operators can be easily composed to summarize impactful papers related to function calling with large language models.
+                First, we use <code>sem_search</code> to find the top 100 papers related to function calling.
+                Then, we use <code>sem_filter</code> to filter the results to only include papers that mention large language models.
+                Next, we use the <code>sem_topk</code> operator to find the top 20 papers that seem most impactful.
+                Finally, we use <code>sem_agg</code> to summarize the papers based on their abstracts.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="code-block">
+              <pre><code class="language-python">
+papers_df.sem_search("abstract", "function calling", K=100)
+    .sem_filter("{title} mentions large language models")
+    .sem_topk("Which {abstract} seems most impactful?", K=20)
+    .sem_agg("Summarize the papers, based on their {abstract}")
+              </code></pre>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Code Example Section -->
 
     <!-- Team Section -->
     <section id="team" class="team section light-background">
@@ -266,6 +314,8 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
