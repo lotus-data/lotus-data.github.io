@@ -52,7 +52,8 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">Use Cases</a></li>
+          <li><a href="#code-example">Code Example</a></li>
           <li><a href="#team">Team</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -94,7 +95,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
+        <h2>Use Cases</h2>
         <p>LOTUS introduces semantic operators: a concise, declarative model for AI-driven data transformations.</p>
       </div><!-- End Section Title -->
 
@@ -113,29 +114,29 @@
           <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-code-square"></i>
-                <h4><a href="" class="stretched-link">Semantic Operators</a></h4>
-                <p>LOTUS introduces semantic operators, a declarative and general-purpose programming interface that extends the relational model with composable AI-based operations for bulk semantic queries.</p>
+                <i class="bi bi-check-circle"></i>
+                <h4><a href="" class="stretched-link">Fact-Checking</a></h4>
+                <p>LOTUS is able to achieve 28x speedup and 10% higher accuracy on FEVER than existing fact-checking pipelines through semantic search and filter.</p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-graph-up"></i>
-                <h4><a href="" class="stretched-link">Ease of Use</a></h4>
-                <p>LOTUS enables achieving state-of-the-art performance with just a few lines of code. Its intuitive interface allows users to implement complex AI-driven data transformations effortlessly.</p>
+                <i class="bi bi-tags"></i>
+                <h4><a href="" class="stretched-link">Multi-Label Classification</a></h4>
+                <p>LOTUS explores the semantic join space and achieves 400x faster joins on while maintaining statistical accuracy guarantees on BioDEX.</p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-lightning-charge"></i>
-                <h4><a href="" class="stretched-link">High Performance</a></h4>
+                <i class="bi bi-search"></i>
+                <h4><a href="" class="stretched-link">Search and Ranking</a></h4>
                 <p>
-                  LOTUS outperforms state-of-the-art AI pipelines, offering up to 28x faster execution with comparable accuracy. It achieves up to 400x acceleration in semantic operations while maintaining statistical accuracy guarantees.
+                  LOTUS uses semantic indexes in conjunction with sorting based algorithms to achieve 20% faster ranking compared to standard ranking on BEIR.
                 </p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-puzzle"></i>
-                <h4><a href="" class="stretched-link">Expressive Power</a></h4>
-                <p>The semantic operator model is highly expressive, capturing state-of-the-art AI pipelines in a few operator calls and enabling new pipelines that achieve up to 49.4% higher quality.</p>
+                <i class="bi bi-file-earmark-text"></i>
+                <h4><a href="" class="stretched-link">ArXiv Paper Analysis</a></h4>
+                <p>LOTUS can semantically group ArXiv papers and allow users to declaratively set accuracy thresholds to control the latency and quality of the results.</p>
               </div><!-- Icon-Box -->
 
             </div>
@@ -159,9 +160,8 @@
       <div class="container">
         <div class="row gy-4">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
             <div class="content">
-              <h3>Quickly Build Semantic Pipelines</h3>
               <p>
                 This example shows how LOTUS operators can be easily composed to summarize impactful papers related to function calling with large language models.
                 First, we use <code>sem_search</code> to find the top 100 papers related to function calling.
@@ -172,7 +172,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
             <div class="code-block">
               <pre><code class="language-python">
 papers_df.sem_search("abstract", "function calling", K=100)
