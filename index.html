@@ -52,8 +52,8 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#code-example">Get Started</a></li>
           <li><a href="#about">Use Cases</a></li>
-          <li><a href="#code-example">Code Example</a></li>
           <li><a href="#team">Team</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -76,8 +76,12 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="100">
-            <h2>LOTUS: Easily Run LLMs over Tables</h2>
-            <p>A Query Engine For Processing Structured and Unstructured Data with LLMs</p>
+            <h1> LOTUS Makes LLM-Powered Data Processing Fast and Easy</h1>
+            <!-- <h2>LOTUS: Easily Run LLMs over Tables</h2> -->
+            <span style="display:block; height: 1em;"></span>
+            <p>LOTUS is an optimized query engine for processing structured and unstructured data with LLMs</p>
+            <span style="display:block; height: 1em;"></span>
+
             <div class="d-flex justify-content-center gap-4">
               <a href="https://lotus-ai.readthedocs.io/en/latest/" class="btn-get-started">Docs</a>
               <a href="https://github.com/TAG-Research/lotus" class="btn-get-started">GitHub</a>
@@ -91,52 +95,146 @@
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
+    <section id="code-example" class="code-example about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Get started in a few lines of code!</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="content col-xl-3 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+            <!-- <h3>Get started in a few lines of code!</h3> -->
+            <p>
+              LOTUS provides an intuitive Python package with a familiar Pandas-like API.
+              <!-- <a href="" class="btn-get-started">Open in Colab</a> -->
+            </p>
+            <a href="https://colab.research.google.com/drive/1qtmklXD_J1SSJLR86ws4GsYcLln6FZqY?usp=sharing#scrollTo=0s7QleF7Okqp" class="about-btn align-self-center align-self-xl-start"><span>Open in Colab</span></a>
+          </div>
+
+          <div class="col-xl-9" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+                    <div class="code-block">
+                      <pre><code class="language-python">
+        papers_df.sem_filter("the {abstract} has an open source repo")
+            .sem_topk("Which {abstract} has the most ground-breaking ideas", K=20)
+            .sem_agg("Summarize the papers, based on their {abstract}")
+                      </code></pre>
+                    </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    
+    <!-- Details Section -->
+    <section id="details" class="details section light-background">
+  
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>The Power of Semantic Operators</h2>
+        <p>
+          LOTUS implements semantic operator model, a powerful and declarative programming model for AI-based data processing.
+        </p>
+        <!-- <p>See how easy it is to use LOTUS with this simple example.</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-xl-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-md-4 icon-box position-relative">
+                <i class="bi bi-code-square"></i>
+                <h4>Declarative Programming</h4>
+                <p>
+                  Specify your data logic with declarative, high-level operators (eg <code>sem_filter</code>, <code>sem_topk</code>,  <code>sem_agg</code>). Then leave the rest to the query engine!
+                </p>
+              </div><!-- Icon-Box -->
+
+              <div class="col-md-4 icon-box position-relative">
+                <i class="bi bi-speedometer2"></i>
+                <h4>Highly Optimized</h4>
+                <p>
+                 LOTUS automatically optimizes your programs, for up to 400x speedups
+                </p>
+                
+              </div><!-- Icon-Box -->
+
+              <div class="col-md-4 icon-box position-relative">
+                <i class="bi bi-database"></i>
+                <h4>Seamless Integration</h4>
+                <p>
+                  Semantic operators seamlessly extend the relational model, so you can leverage your structured and unstructured data together from the LOTUS API
+                </p>
+              </div><!-- Icon-Box -->
+
+            </div>
+          </div>
+
+
+        
+
+        </div>
+      </div>
+
+    </section><!-- End Code Example Section -->
+
+    <!-- About Section -->
     <section id="about" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Use Cases</h2>
-        <p>LOTUS introduces semantic operators: a concise, declarative model for AI-driven data transformations.</p>
+        <p>LOTUS helps with a wide array of applications that need to process data with AI. Here are some examples, each written in short & intuitive LOTUS programs.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-5">
 
-          <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
             <h3>LOTUS</h3>
             <p>
             LOTUS is a query engine that extends the relational model with semantic operators, enabling efficient and expressive AI-based analytics across large datasets.
             </p>
             <a href="https://github.com/stanford-futuredata/lotus" class="about-btn align-self-center align-self-xl-start"><span>Explore LOTUS</span> <i class="bi bi-github"></i></a>
-          </div>
+          </div> -->
 
-          <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-12" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
-              <div class="col-md-6 icon-box position-relative">
+              <div class="col-md-3 icon-box position-relative">
                 <i class="bi bi-check-circle"></i>
                 <h4><a href="" class="stretched-link">Fact-Checking</a></h4>
-                <p>LOTUS is able to achieve 28x speedup and 10% higher accuracy on FEVER than existing fact-checking pipelines through semantic search and filter.</p>
+                <p>LOTUS programs reproduce and improve upon state-of-the art fact-checking accuracy pipelines on the FEVER dataset, while optimizing execution to acheive 28x speedups.</p>
               </div><!-- Icon-Box -->
 
-              <div class="col-md-6 icon-box position-relative">
+              <div class="col-md-3 icon-box position-relative">
                 <i class="bi bi-tags"></i>
-                <h4><a href="" class="stretched-link">Multi-Label Classification</a></h4>
-                <p>LOTUS explores the semantic join space and achieves 400x faster joins on while maintaining statistical accuracy guarantees on BioDEX.</p>
+                <h4><a href="" class="stretched-link">Medical Classification</a></h4>
+                <p>LOTUS acheives state-of-the art accuracy with a single semantic operator on the BioDEX dataset, which presents a complex medical classification task. Under the hood, the LOTUS query engine automatically explores feasible execution plans to achieves 400x faster performance than the default.</p>
               </div><!-- Icon-Box -->
 
-              <div class="col-md-6 icon-box position-relative">
+              <div class="col-md-3 icon-box position-relative">
                 <i class="bi bi-search"></i>
                 <h4><a href="" class="stretched-link">Search and Ranking</a></h4>
                 <p>
-                  LOTUS uses semantic indexes in conjunction with sorting based algorithms to achieve 20% faster ranking compared to standard ranking on BEIR.
+                  LOTUS programs acheive 200% higher accuracy than state-of-the-art retrieval and re-ranking methods, while also providing query efficiency with up to 10x lower execution time than LM-based methods used by prior works.
                 </p>
               </div><!-- Icon-Box -->
 
-              <div class="col-md-6 icon-box position-relative">
+              <div class="col-md-3 icon-box position-relative">
                 <i class="bi bi-file-earmark-text"></i>
-                <h4><a href="" class="stretched-link">ArXiv Paper Analysis</a></h4>
-                <p>LOTUS can semantically group ArXiv papers and allow users to declaratively set accuracy thresholds to control the latency and quality of the results.</p>
+                <h4><a href="" class="stretched-link">Research Insights</a></h4>
+                <p>Simple LOTUS programs process large sets of recent ArXiv papers allows you to provide summaries, and group the data based on topics, answer complex research questions.</p>
               </div><!-- Icon-Box -->
 
             </div>
@@ -148,45 +246,7 @@
 
     </section><!-- /About Section -->
 
-    <!-- Code Example Section -->
-    <section id="code-example" class="code-example section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Code Example</h2>
-        <p>See how easy it is to use LOTUS with this simple example.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="row gy-4">
-
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <div class="content">
-              <p>
-                This example shows how LOTUS operators can be easily composed to summarize impactful papers related to function calling with large language models.
-                First, we use <code>sem_search</code> to find the top 100 papers related to function calling.
-                Then, we use <code>sem_filter</code> to filter the results to only include papers that mention large language models.
-                Next, we use the <code>sem_topk</code> operator to find the top 20 papers that seem most impactful.
-                Finally, we use <code>sem_agg</code> to summarize the papers based on their abstracts.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-            <div class="code-block">
-              <pre><code class="language-python">
-papers_df.sem_search("abstract", "function calling", K=100)
-    .sem_filter("{title} mentions large language models")
-    .sem_topk("Which {abstract} seems most impactful?", K=20)
-    .sem_agg("Summarize the papers, based on their {abstract}")
-              </code></pre>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- End Code Example Section -->
+    
 
     <!-- Team Section -->
     <section id="team" class="team section light-background">

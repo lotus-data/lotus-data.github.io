@@ -22,7 +22,8 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #07467c; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0880e8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  /* --accent-color: #0880e8; Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #840af6; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -34,18 +35,20 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0880e8; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #0880e8; /*Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over.
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f0f8ff;
+  /* --background-color: #f0f8ff; */
+  --background-color: #f5f7fd;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #005cab;
+  /* --background-color: #005cab; */
+  --background-color: #0a2e4a;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #0077de;
@@ -923,6 +926,69 @@ section,
 .hero .btn-get-started:hover {
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
+
+/*--------------------------------------------------------------
+# Details Section
+--------------------------------------------------------------*/
+.details .content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Centers items horizontally */
+  text-align: center;     /* Ensures text within each element is centered */
+}
+
+.details .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.details .content h4 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+  justify-content: center;
+
+
+}
+
+.details .content p {
+  margin-bottom: 30px;
+  
+}
+
+
+.details .icon-box i {
+  font-size: 80px;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column; /* Centers elements vertically */
+  align-items: center;    /* Centers items horizontally */
+}
+
+.details .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.details .icon-box h4 a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.details .icon-box p {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 0;
+}
+
+.details .icon-box:hover h4 a {
+  color: var(--accent-color);
+}
+
 
 /*--------------------------------------------------------------
 # About Section
