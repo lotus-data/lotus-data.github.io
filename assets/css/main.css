@@ -1037,7 +1037,7 @@ section,
 }
 
 .about .icon-box i {
-  font-size: 40px;
+  font-size: 80px;
   color: var(--accent-color);
   margin-bottom: 10px;
   display: flex;
