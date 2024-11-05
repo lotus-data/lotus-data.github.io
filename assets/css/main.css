@@ -852,6 +852,7 @@ section,
   position: relative;
 }
 
+
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
@@ -873,6 +874,8 @@ section,
   display: flex;
   align-items: center;
 }
+
+
 
 .hero h2 {
   margin: 0 0 10px 0;
@@ -930,48 +933,69 @@ section,
 /*--------------------------------------------------------------
 # Details Section
 --------------------------------------------------------------*/
-.details .content {
+/* .details {
+  position: relative;
+  padding: 120px 0 60px 0;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center;    /* Centers items horizontally */
-  text-align: center;     /* Ensures text within each element is centered */
+  align-items: center;
+} */
+
+.details .content h2 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+  /* justify-content: center;
+  position: relative;
+  padding: 120px 0 60px 0;
+  display: flex;
+  align-items: center;
+  text-align: center; */
 }
 
 .details .content h3 {
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
-  justify-content: center;
+  /* justify-content: center;
+  position: relative;
+  padding: 120px 0 60px 0;
+  display: flex;
+  align-items: center;
+  text-align: center; */
 }
 
 .details .content h4 {
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
-  justify-content: center;
-
-
+  /* justify-content: center;
+  text-align: center; */
 }
 
 .details .content p {
   margin-bottom: 30px;
+  /* flex-direction: column; /* Centers elements vertically */
+  /* text-align: center; */ 
   
 }
 
 
 .details .icon-box i {
-  font-size: 80px;
+  font-size: 110px;
   color: var(--heading-color);
   margin-bottom: 10px;
   display: flex;
   flex-direction: column; /* Centers elements vertically */
-  align-items: center;    /* Centers items horizontally */
+  align-items: center;   
 }
 
 .details .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
+  flex-direction: column; /* Centers elements vertically */
+  align-items: center;    
+  text-align: center;
 }
 
 .details .icon-box h4 a {
@@ -983,6 +1007,9 @@ section,
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin-bottom: 0;
+  flex-direction: column; /* Centers elements vertically */
+  align-items: center;   
+  text-align: center;
 }
 
 .details .icon-box:hover h4 a {

@@ -108,10 +108,10 @@
 
           <div class="content col-xl-4 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
             <!-- <h3>Get started in a few lines of code!</h3> -->
-            <h6>
-              LOTUS provides an intuitive Python package with a familiar Pandas-like API for LLM-powered data processing.
+            <h5>
+              LOTUS provides an intuitive Python package with a familiar Pandas-like API for LLM-powered data processing using semantic operators.
               <!-- <a href="" class="btn-get-started">Open in Colab</a> -->
-            </h6>
+            </h5>
             <span style="display:block; height: 1em;"></span>
             <a href="https://colab.research.google.com/drive/1qtmklXD_J1SSJLR86ws4GsYcLln6FZqY?usp=sharing#scrollTo=0s7QleF7Okqp" class="about-btn align-self-center align-self-xl-start"><span>Open in Colab</span></a>
           </div>
@@ -121,8 +121,8 @@
                     <div class="code-block">
                       <pre><code class="language-python">
         papers_df.sem_filter("the {abstract} has an open source repo")
-            .sem_topk("Which {abstract} has the most ground-breaking ideas", K=20)
-            .sem_agg("Summarize the papers, based on their {abstract}")
+            .sem_topk("the {abstract} has the most ground-breaking ideas", K=20)
+            .sem_agg("summarize the papers based on their {abstract}")
                       </code></pre>
                     </div>
             </div>
@@ -143,7 +143,7 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>The Power of Semantic Operators</h2>
         <p>
-          LOTUS implements semantic operator model, a powerful and declarative programming model for AI-based data processing.
+          LOTUS implements the semantic operator model, a powerful and declarative programming model for AI-based data transformations.
         </p>
         <!-- <p>See how easy it is to use LOTUS with this simple example.</p> -->
       </div><!-- End Section Title -->
