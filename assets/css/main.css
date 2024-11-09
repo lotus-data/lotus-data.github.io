@@ -868,13 +868,18 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 40vh;
+  min-height: 90vh;
   position: relative;
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
 }
 
+.hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  /* font-weight: 700; */
+}
 
 
 .hero h2 {
@@ -904,7 +909,8 @@ section,
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 30px;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -918,12 +924,17 @@ section,
   background: var(--accent-color);
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 16px;
-  display: inline-block;
+  /* font-size: 16px; */
+  font-size: 20px;
+  /* display: inline-block; */
+  
+  align-items: center;   
   padding: 8px 40px;
   border-radius: 50px;
   transition: 0.5s;
   border: 2px solid var(--accent-color);
+  display: flex;
+  flex-direction: row; /* Centers elements vertically */
 }
 
 .hero .btn-get-started:hover {
