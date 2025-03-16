@@ -1,3 +1,5 @@
+LOTUS uses the below free template from BootstrapMade.
+
 Thanks for downloading this template!
 
 Template Name: Anyar
