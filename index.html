@@ -169,9 +169,9 @@
             <div class="row gy-4">
                     <div class="code-block">
                       <pre><code class="language-python">
-        papers_df.sem_filter("the {abstract} has an open source repo")
-            .sem_topk("the {abstract} has the most ground-breaking ideas", K=20)
-            .sem_agg("summarize the papers based on their {abstract}")
+        papers_df.sem_filter("the {research_paper} has an open source repo")
+            .sem_topk("the {research_paper} has the most ground-breaking ideas", K=20)
+            .sem_agg("summarize the papers based on their {research_paper}")
                       </code></pre>
                     </div>
             </div>
